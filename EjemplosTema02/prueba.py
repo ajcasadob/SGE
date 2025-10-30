@@ -1,6 +1,7 @@
 # Requiere Python 3.10+
 # Primera lista ya introducida manualmente (no pide por teclado)
 lista = ['Agua', 'Huevos', 'Aceite', 'Sal', 'Limón']
+lista2 = ['Agua', 'Huevos', 'Aceite', 'Sal', 'Limón']
 
 running = True
 while running:
@@ -105,7 +106,46 @@ Menú:
                 print(a, b)
         case "23":
             print("Lista actual:", lista)
+
+        case "24":
+            print('Para comparar dos listas usamos los operadores de <> =')
+            print(lista<lista2)  
+
+        case "25":
+            print('Podemos hacer una copia sin modificar la original usando copy()')
+            lista2 = lista.copy() 
+
+        case "26":
+            print('')  
+            word = "yeah"
+
+            enough_length = len(word) > 4        # False
+            right_beginning = word.startswith("p")  # False
+            min_ys = word.count("y") >= 1        # True
+
+            is_fine_word = any([enough_length, right_beginning, min_ys])
+
+            if is_fine_word:
+                print("Fine word!")
+            else:
+                print("No thanks")
+
+
+                word = "python"
+
+                enough_length = len(word) > 4          # True
+                right_beginning = word.startswith("p") # True
+                min_ys = word.count("y") >= 1          # True
+
+                is_cool_word = all([enough_length, right_beginning, min_ys])
+
+                if is_cool_word:
+                    print("Cool word!")
+                else:
+                    print("No thanks")
+
         case "0":
+
             running = False
             print("Saliendo...")
         case _:
