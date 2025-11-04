@@ -10,12 +10,13 @@ for i in range (num):
     palabra = str(input('Indique las palabras a añadir:'))
     palabras.append(palabra)
 
+palabraSustituir = str(input('Palabra a sustituir'))
+nuevaPalabra = str(input('Indica la nueva palabra'))
+for i in range (len(palabras)):
+    if palabras[i]== palabraSustituir:
+        palabras[i]= nuevaPalabra
 
+print(f"Lista modificada: {palabras}")
 
-print(palabras)
-
-palabras.reverse()
-
-print(palabras)
 
 

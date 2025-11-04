@@ -7,8 +7,12 @@ for i in range (num):
     palabra = str(input('Indique las palabras a añadir:'))
     palabras.append(palabra)
 
-print(palabras)
 palabraEliminar = str(input('Indica la palabra que quieres eliminar:'))
-palabras.remove(palabraEliminar)
-print(palabras)
+
+if palabraEliminar not in palabras:
+    print('No esta en la lista')
+else:
+    print(palabras)
+    palabras.remove(palabraEliminar)
+    print(palabras)
 
