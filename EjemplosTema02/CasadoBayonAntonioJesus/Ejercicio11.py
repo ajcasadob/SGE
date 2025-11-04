@@ -13,5 +13,26 @@ palabras = []
 palabras2 = []
 
 
+num = int(input('Indica la cantidad de palabras: '))
 
+for i in range (num):
+    palabrasNuevas = str(input('Indica las palabras de la lista'))
+    palabras.append(palabrasNuevas)
+
+for i in range(num):
+    palabrasNuevas2 = str(input('Indica las palabras de la segunda lista:'))
+    palabras2.append(palabrasNuevas2)
+
+newLista = []
+for i in palabras :
+    for j in palabras2:
+        if i == j:
+            newLista.append(i)
+
+
+
+
+print(palabras)
+print(palabras2)
+print(newLista)
 
