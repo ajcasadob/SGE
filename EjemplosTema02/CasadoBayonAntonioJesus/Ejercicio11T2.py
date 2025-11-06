@@ -11,6 +11,9 @@
 
 palabras = []
 palabras2 = []
+noRepetidos = []
+noRepetidos2 = []
+noRepetidos3 = []
 
 
 num = int(input('Indica la cantidad de palabras: '))
@@ -29,7 +32,7 @@ for i in palabras :
         if i == j:
             newLista.append(i)
 
-noRepetidos = []
+
 
 
 
@@ -38,14 +41,14 @@ for i in palabras:
         noRepetidos.append(i)
 
 
-noRepetidos2 = []
+
 
 for i in palabras2:
     if i not in palabras:
         noRepetidos2.append(i)
 
 
-noRepetidos3 = []
+
 
 for i in newLista:
     if i not in noRepetidos:
