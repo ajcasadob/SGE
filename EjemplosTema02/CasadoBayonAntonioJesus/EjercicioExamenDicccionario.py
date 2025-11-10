@@ -31,8 +31,12 @@ while repetir:
         el = int(input('''
             0.Salir
             1.Agregar una nueva palabra
-            2.Imprimir el diccionario completo 
-            3.Buscar una palabra por nombre y mostrar sus significado evitando que salta un error si la palabra no se encuentra\n'''))
+            2.Imprimir el diccionario completo
+            3.Buscar una palabra por nombre y mostrar sus significado evitando que salta un error si la palabra no se encuentra
+            4.Modificar una palabra, modificando únicamente el significado de esta por otro nuevo, leído por teclado
+            5.Pedir al usuario sus dos palabras favoritas con los significados y combinar este con el ya creada modificando el original
+            6. Borrar una palabra(ustedes decidís la mejor forma)
+            7. Ordenar el diccionario por orden alfabetico'''))
         match el:
             case 0:
                 print('Saliendo..')
@@ -57,11 +61,15 @@ while repetir:
                     
                     
             case 5:
-                print
+                    for i in range(2):
+                          fav = input(f'Palabra favorita {i+1}:')
+                          sig= input(f'Signicado de {fav}:')
+                          diccionario [fav]= sig
+                
             case 6:
                 
                 palabraEliminar = input('Que palabra quieres eliminar')
-                del diccionario [palabraEliminar]   
+                del diccionario [palabraEliminar]
             case 7:
                     
                     print(sorted(diccionario.items()))
@@ -69,4 +77,4 @@ while repetir:
                     
                     
             case _:
-                print('La opcion elegida no esta establecida')       
+                print('La opcion elegida no esta establecida')
