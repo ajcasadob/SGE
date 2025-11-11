@@ -78,7 +78,7 @@ while repetir:
                 media = sum(recaudacion)/len(recaudacion)
                 print(f'La media diaria es de {media} €')
         case 9:
-                dias_ocupados = sum(1 for x in recaudacion if x >0)
+                dias_ocupados = sum(1 for x in recaudacion if x >1)
                 porcentaje = dias_ocupados / 30*100
                 print(f'Porcentaje de ocupacion sobre los 7 dias: {porcentaje:.2f} % ({dias_ocupados}/ 7 días)')
         case 10 :

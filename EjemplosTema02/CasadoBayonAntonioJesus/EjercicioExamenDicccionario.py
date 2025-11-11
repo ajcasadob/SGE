@@ -62,17 +62,21 @@ while repetir:
                     
             case 5:
                     for i in range(2):
-                          fav = input(f'Palabra favorita {i+1}:')
-                          sig= input(f'Signicado de {fav}:')
-                          diccionario [fav]= sig
-                
+                        fav = input(f'Palabra favorita {i+1}:')
+                        sig= input(f'Signicado de {fav}:')
+                        diccionario [fav]= sig
+                        print(diccionario)
+                        print(diccionario)
+                    newDiccionario = {fav:sig, fav: sig}
+                    diccionario.update(newDiccionario)
+                    print(diccionario)
             case 6:
                 
                 palabraEliminar = input('Que palabra quieres eliminar')
                 del diccionario [palabraEliminar]
             case 7:
-                    
-                    print(sorted(diccionario.items()))
+                    diccionarioOrdenado = dict(sorted(diccionario.items()))
+                    print(diccionarioOrdenado)
                         
                     
                     
