@@ -34,4 +34,3 @@ while repetir:
                     print(f'El total de inventario es de {sumaTotal}')  
         case _:
             print('La opcion elegida no esta establecida')                     
-         
