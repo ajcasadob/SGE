@@ -1,0 +1,5 @@
+codigo|nombre|cantidad|precio|categoria
+
+FR001|Pastillas de freno|15|45.50|LIMPIA
+AC002|Filtro de aceite|23|12.00|Motor
+BT003|Bateria 12V|8|89.99|Electrico
