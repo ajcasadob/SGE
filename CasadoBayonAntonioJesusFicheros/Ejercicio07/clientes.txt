@@ -1,0 +1,35 @@
+Nombre:		Antonio
+Apellido1:	Casado
+Apellido2:	Bayon
+Edad:		20
+
+Nombre:		C:/Python314/python.exe "c:/Users/Antonio Jesus/Desktop/2ºDAM/SGE/CasadoBayonAntonioJesusFicheros/Ejercicio07/Ejercicio07.py"
+Apellido1:	C:/Python314/python.exe "c:/Users/Antonio Jesus/Desktop/2ºDAM/SGE/CasadoBayonAntonioJesusFicheros/Ejercicio07/Ejercicio07.py"
+Apellido2:	C:/Python314/python.exe "c:/Users/Antonio Jesus/Desktop/2ºDAM/SGE/CasadoBayonAntonioJesusFicheros/Ejercicio07/Ejercicio07.py"
+Edad:		C:/Python314/python.exe "c:/Users/Antonio Jesus/Desktop/2ºDAM/SGE/CasadoBayonAntonioJesusFicheros/Ejercicio07/Ejercicio07.py"
+
+Nombre:		o
+Apellido1:	0
+Apellido2:	0
+Edad:		0
+
+Nombre:		0
+Apellido1:	0
+Apellido2:	0
+Edad:		0
+
+Nombre:		0
+Apellido1:	C:/Python314/python.exe "c:/Users/Antonio Jesus/Desktop/2ºDAM/SGE/CasadoBayonAntonioJesusFicheros/Ejercicio07/Ejercicio07.py"
+Apellido2:	C:/Python314/python.exe "c:/Users/Antonio Jesus/Desktop/2ºDAM/SGE/CasadoBayonAntonioJesusFicheros/Ejercicio07/Ejercicio07.py"
+Edad:		C:/Python314/python.exe "c:/Users/Antonio Jesus/Desktop/2ºDAM/SGE/CasadoBayonAntonioJesusFicheros/Ejercicio07/Ejercicio07.py"
+
+Nombre:		Antonio
+Apellido1:	pepe
+Apellido2:	luis
+Edad:		20
+
+Nombre:		C:/Python314/python.exe "c:/Users/Antonio Jesus/Desktop/2ºDAM/SGE/CasadoBayonAntonioJesusFicheros/Ejercicio07/Ejercicio07.py"
+Apellido1:	salir
+Apellido2:	salir
+Edad:		20
+
