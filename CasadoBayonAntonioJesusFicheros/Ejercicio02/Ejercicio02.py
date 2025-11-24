@@ -2,7 +2,7 @@
 from datetime import datetime
 
 
-f = open('Ejercicio02/fechas.txt','a')
+f = open('CasadoBayonAntonioJesusFicheros/Ejercicio02/fechas.txt','a')
 
 
 fecha = datetime.now()

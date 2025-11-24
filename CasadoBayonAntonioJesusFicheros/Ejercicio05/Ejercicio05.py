@@ -2,7 +2,7 @@
 #líneas en orden inverso.
 
 
-archivo_entrada = open('datos.txt', 'r')
+archivo_entrada = open('CasadoBayonAntonioJesusFicheros/Ejercicio05/datos.txt', 'r')
 lineas = archivo_entrada.readlines()
 archivo_entrada.close()
 
@@ -10,7 +10,7 @@ archivo_entrada.close()
 lineas_invertidas = lineas[::-1]
 
 
-archivo_salida = open('invertido.txt', 'w')
+archivo_salida = open('CasadoBayonAntonioJesusFicheros/Ejercicio05/invertido.txt', 'w')
 archivo_salida.writelines(lineas_invertidas)
 archivo_salida.close()
 
