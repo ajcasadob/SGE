@@ -19,9 +19,7 @@ def lista():
     for i in range (1, len(listaNumeros)):
         if listaNumeros[i] > listaNumeros[i-1]:
             contador+=1
-            
-            
-    print(f'La cantidad de numeros mayores es {contador}') 
+            print(f'La cantidad de numeros mayores es {contador}') 
 
     
 
