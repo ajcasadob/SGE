@@ -17,6 +17,7 @@ def ordenar_numeros(num1, num2, num3):
     return numeros
 
 
+
 def mostrar_resultado(lista_ordenada):
     
     print(f"Lista ordenada: {lista_ordenada}")

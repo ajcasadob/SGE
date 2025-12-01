@@ -15,11 +15,13 @@ for i in range (numLista):
     listaNumeros.append(numIntroducir)
 
 def lista():
-    contador = 0
-    for i in range (1, len(listaNumeros)):
+    mayores =[]
+    for i in range(1, len(listaNumeros)):
         if listaNumeros[i] > listaNumeros[i-1]:
-            contador+=1
-            print(f'La cantidad de numeros mayores es {contador}') 
+            mayores.append(listaNumeros[i])
+    
+    print(f'Los numeros mayores que el anterior son : {mayores}') 
+    print(f'La cantidad de numeros mayores es {len(mayores)}')
 
     
 
