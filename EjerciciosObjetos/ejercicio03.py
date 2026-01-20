@@ -53,6 +53,6 @@ print(f"Inmuebles con presupuesto máximo de {presupuesto_maximo}€:")
 print("-" * 60)
 for inmueble in resultado:
     print(f"Año: {inmueble['año']}, Metros: {inmueble['metros']}, "
-          f"Habitaciones: {inmueble['habitaciones']}, Garaje: {inmueble['garaje']}, "
-          f"Zona: {inmueble['zona']}, Precio: {inmueble['precio']:.2f}€")
+        f"Habitaciones: {inmueble['habitaciones']}, Garaje: {inmueble['garaje']}, "
+        f"Zona: {inmueble['zona']}, Precio: {inmueble['precio']:.2f}€")
 print(f"\nTotal de inmuebles encontrados: {len(resultado)}")
