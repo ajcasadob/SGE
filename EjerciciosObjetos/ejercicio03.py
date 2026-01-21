@@ -13,21 +13,20 @@ def buscar_inmuebles(inmuebles, presupuesto):
     resultado = []
     
     for inmueble in inmuebles:
-        # Crear una copia del inmueble para no modificar el original
+       
         inmueble_copia = inmueble.copy()
         
-        # Calcular antigüedad
         antiguedad = año_actual - inmueble['año']
         
-        # Calcular precio base
+       
         precio_base = (inmueble['metros'] * 1000 + 
                       inmueble['habitaciones'] * 5000 + 
                       inmueble['garaje'] * 15000)
         
-        # Aplicar depreciación por antigüedad
+       
         precio_con_antiguedad = precio_base * (1 - antiguedad / 100)
         
-        # Aplicar factor de zona
+        
         if inmueble['zona'] == 'A':
             precio_final = precio_con_antiguedad
         elif inmueble['zona'] == 'B':
@@ -35,17 +34,16 @@ def buscar_inmuebles(inmuebles, presupuesto):
         else:
             precio_final = precio_con_antiguedad
         
-        # Agregar precio al inmueble
+       
         inmueble_copia['precio'] = precio_final
         
-        # Añadir a la lista si está dentro del presupuesto
+      
         if precio_final <= presupuesto:
             resultado.append(inmueble_copia)
     
     return resultado
 
 
-# Ejemplo de uso
 presupuesto_maximo = 100000
 resultado = buscar_inmuebles(inmuebles, presupuesto_maximo)
 
