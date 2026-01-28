@@ -42,11 +42,6 @@ class Streaming(Servidor):
 
 class CentroDeServidores:
     
-    def calcularCosteDescuento(self,func):
-        def wrrapper (self, Servidores:list[Servidor],cantMin:float,descuento:float, *args, **kwargs):
-    
-    
-    
     
     def calcularCosteTotal(self,Servidores:list[Servidor]):
         
@@ -55,7 +50,49 @@ class CentroDeServidores:
             total = total + servidor.calcular_coste_base()
             
         return total
+    
+    def calcularDescuento (self, servidores:list[Servidor],umbralDescuento:float,descuento:float)->float:
+        basePorcentaje :float = 100
+        total : float = CentroDeServidores.calcularCosteTotal(servidores)
+        
+        if total > umbralDescuento:
+            return total - ((total*descuento)/basePorcentaje)
+        return total
+    @staticmethod
+    def calcularCosteUnicoMMO(self, servidores:list[Servidor])-> float:
+      servidoresFiltrado =[servidor for servidor in servidores if isinstance(servidor,MMO)]
+      return self.calcularCosteTotal(servidoresFiltrado)
+  
+    
+    @staticmethod
+    def calcularCosteStreaming(self, servidores:list[Servidor])->float:
+        servidoresFiltrado = [servidor for servidor in servidores if isinstance(servidor,Streaming)]
+        return CentroDeServidores.calcularCosteTotal(servidoresFiltrado)
+    
+class CloudHostingMixin():
+    
+    def __init__(self,gigaByte:int, costeGb:float):
+        self.gigaByte = gigaByte
+        self.costeGb = costeGb
+        
+    def annadirGb(self,costeOriginal:float):
+        return costeOriginal +(self.gigaByte * self.costeGb)
 
+class BackupMixin():
+    
+    frecuenciaBackup = 7
+    
+    def __init__(self, costeBackup:float):
+        self.costeBackup = costeBackup
+    
+    def annadirBackup(self, costeOriginal:float, diasActivo:int):
+        return costeOriginal+((diasActivo//BackupMixin.frecuenciaBackup)*self.costeBackup)
+    
+class ServidorHibrido(MMO,BattleRoyale):
+    
+    def __init__(self, nombre, costDiario, costAct):
+        super().__init__(nombre, costDiario, costAct)
+    
     
     
         
