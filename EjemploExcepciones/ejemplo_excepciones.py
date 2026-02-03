@@ -49,3 +49,26 @@ def getint(a):
         print('Algo salio mal')
 
 getint('hola')  
+
+def _sum(a:int, b:int)-> int:
+    if isinstance (a,int) and isinstance (b, int):
+        return a + b
+    raise TypeError('La operación debe de ser enteros')
+
+_sum(4,3)
+
+
+class NotIntError(Exception):
+    pass
+
+values = (4,7,2.11,9)
+
+for value in values:
+    if not isinstance (value, int):
+        raise NotIntError(value)
+    
+class NotIntError(Exception):
+    def __init__(self, message='Solo funciona con enteros'):
+        super().__init__(message)
+    
+    raise NotIntError()
