@@ -1,0 +1,14 @@
+from modelo.animales import Animales
+
+
+class Osos(Animales):
+    
+    def __init__(self, nombre, coste: float, precioCarnePescado: float):
+        super().__init__(nombre, coste)
+        self.precioCarnePescado = precioCarnePescado
+        
+    
+    def calcularCoste(self, numDiasAnio):
+        semanasAnio = 52
+        coste_carne = self.precioCarnePescado * 2 * semanasAnio  
+        return coste_carne + super().calcularCoste(numDiasAnio)

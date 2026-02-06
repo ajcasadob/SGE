@@ -1,0 +1,14 @@
+from modelo.animales import Animales
+
+
+class Serpientes(Animales):
+    def __init__(self, nombre: str, coste: float, numInsectos: int, precioInsecto: float):
+        super().__init__(nombre, coste)
+        self.numInsectos = numInsectos  
+        self.precioInsecto = precioInsecto
+        
+    
+    def calcularCoste(self, numDiasAnio):
+        semanasAnio = 52
+        coste_insectos = self.numInsectos * self.precioInsecto * 2 * semanasAnio  
+        return coste_insectos + super().calcularCoste(numDiasAnio)
